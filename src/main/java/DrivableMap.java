@@ -63,8 +63,7 @@ class DrivableMap {
      *       drivable_map.
      */
     public List<Tradable> getTradable() {
-        Collection<Drivable> values = this.drivable_map.values();
-        List<Drivable> items = new ArrayList<Drivable>(values);
+        List<Drivable> items = ((List<Drivable>) this.drivable_map.values());
         List<Tradable> l = new ArrayList<Tradable>();
         for (Drivable i: items) {
             if (i instanceof Tradable) {
