@@ -45,7 +45,7 @@ class DrivableMap {
      * iterate through drivable_map.
      */
     public boolean hasFasterThan(int speed) {
-        List<Drivable> speeds = ((List<Drivable>) this.drivable_map.values);
+        List<Drivable> speeds = ((List<Drivable>) this.drivable_map.values());
         for (Drivable i: speeds) {
             if (i.getMaxSpeed() >= speed) {
                 return true;
@@ -63,7 +63,7 @@ class DrivableMap {
      *       drivable_map.
      */
     public List<Tradable> getTradable() {
-        List<Drivable> items = ((List<Drivable>) this.drivable_map.values);
+        List<Drivable> items = ((List<Drivable>) this.drivable_map.values());
         List<Tradable> l = new ArrayList<Tradable>();
         for (Drivable i: items) {
             if (i instanceof Tradable) {
