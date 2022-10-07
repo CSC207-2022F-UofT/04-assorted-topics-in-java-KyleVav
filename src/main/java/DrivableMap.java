@@ -67,7 +67,7 @@ class DrivableMap {
         List<Tradable> l = new ArrayList<Tradable>();
         for (Drivable i: items) {
             if (i instanceof Tradable) {
-                l.add(((Tradable) i));
+                
             }
         }
         return l;
