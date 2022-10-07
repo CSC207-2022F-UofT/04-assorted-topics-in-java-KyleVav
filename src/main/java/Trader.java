@@ -68,8 +68,8 @@ public class Trader<T> {
      *       We will call this in exchangeMoney().
      */
     public int getSellingPrice(T item) {
-        if (item instanceof Tradable) {
-            return ((Trader<Tradable>) item).getPrice();
+        if (item instanceof Trader<Tradable>) {
+            return item.getPrice();
         }
         return Tradable.MISSING_PRICE;
     }
